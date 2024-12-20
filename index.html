@@ -3,10 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exam - Name</title>
+    <title>Exam - Jesper Lundqvist</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <nav class="nav-bar">
+      <img src="logo.png" alt="cocktaildb logo" />
+      <a href="#" class="home-nav">Home</a>
+      <a href="#" class="search-nav">Search</a>
+    </nav>
+
+    <section class="start-container">
+      <button class="randomize-drink">Randomize</button>
+    </section>
+
+    <section class="search-container">
+      <form id="search-form">
+        <input
+          type="text"
+          name="search"
+          id="search-bar"
+          placeholder="Find your drink"
+        />
+        <button type="submit" id="search-btn">Search</button>
+      </form>
+      <div id="search-results"></div>
+    </section>
+
+    <section class="details-container"></section>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
